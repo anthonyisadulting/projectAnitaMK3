@@ -5,6 +5,7 @@
 ### Files and their purpose:
 
 - folder media anitamk3 is for videos and photos of the bot being built, running, etc!
+- CAD holds all of the 3D models for the robot
 - templates is the folder holding the HTML for the python web server
 - testdrive.py is the file that controls motor movement
 - webServer.py initializes and hosts the webserver, as well as connects all the files together

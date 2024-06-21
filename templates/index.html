@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        title{
+            color: grey;
+        }
+
+        h1{
+            color: grey;
+            text-align: center;
+        }
+
+        p{
+            color: gray;
+            text-align: center;
+        }
+
+        .btn-group button{
+            background-color: darkgray;
+            border: 1px solid black;
+            color: black;
+            padding: 10px 24px;
+            cursor: pointer;
+            float: left; /*float buttons side by side*/
+        }
+        
+        /*clears floats*/
+        .btn-group:after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .btn-group button:not(:last-child){
+            border-right: none; /*prevents double borders*/
+        }
+
+        .btn-group button:hover{
+            background-color: white;
+        }
+    </style>
+
+    <head>
+        <title>Anita MK3</title>
+    </head> 
+
+    <body>
+        <h1>Anita MK3 App</h1>
+        <div>
+            <p>fuck you</p>
+            <img src = "{{ url_for('videofeed') }}" width = "100%"/>
+        </div>
+        <p>CONTROLS</p>
+         
+        <div class = "btn-group" style = "width: 100%">
+            <button style = "width: 16.66%" onclick="window.location.href = '/stop';">Stop</button>
+            <button style = "width: 16.66%" onclick="window.location.href = '/forward';">Forward</button>
+            <button style = "width: 16.66%" onclick="window.location.href = '/backward';">Backward</button>
+            <button style = "width: 16.66%" onclick="window.location.href = '/left';">Left</button>
+            <button style = "width: 16.66%" onclick="window.location.href = '/right';">Right</button>
+            <button style = "width: 16.66%" onclick="window.location.href = '/lightMode';">Light Mode</button>
+        </div>
+        
+    </body>
+</html>
